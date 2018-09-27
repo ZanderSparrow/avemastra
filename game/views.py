@@ -7,3 +7,6 @@ def home(request):
 def model_item_list(request):
     items = ModelItem.objects.all()
     return render(request, 'game/item_list.html', {'items': items})
+
+def rules(request):
+    return render(request, 'game/rules.html', {})
