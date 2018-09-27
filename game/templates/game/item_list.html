@@ -1,0 +1,15 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+  <div>
+    <h1>Items</h1>
+
+    {% for item in items %}
+    <div>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+    </div>
+    {% endfor %}
+
+  </div>
+{% endblock %}
