@@ -6,7 +6,8 @@
 
     {% for item in items %}
     <div>
-      <h3>{{ item.name }}</h3>
+      <!-- link the item bu primary key pk -->
+      <h3><a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a></h3>
       <p class="model-item">{{ item.description }}</p>
     </div>
     {% endfor %}

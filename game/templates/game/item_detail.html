@@ -1,0 +1,8 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+  <div>
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.description|linebreaksbr }}</p>
+  </div>
+{% endblock %}
